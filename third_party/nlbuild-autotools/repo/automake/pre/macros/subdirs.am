@@ -76,3 +76,13 @@ endef # nl-make-subdirs-with-goals
 define nl-make-subdirs
 $(call nl-make-subdirs-with-dirs-and-goals,$(SUBDIRS),$(MAKECMDGOALS))
 endef # nl-make-subdirs
+
+#
+# nl-make-pretty-subdirs
+#
+# This iteratively invokes make with the target goals defined in
+# MAKECMDGOALS in the subdirectories defined in FPSSUBDIRS.
+#
+define nl-make-fps-subdirs
+$(call nl-make-subdirs-with-dirs-and-goals,$(PRETTY_SUBDIRS),$(MAKECMDGOALS))
+endef # nl-make-fps-subdirs

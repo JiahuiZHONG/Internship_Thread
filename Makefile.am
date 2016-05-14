@@ -57,6 +57,13 @@ DISTCLEANFILES                      = \
     .local-version                    \
     $(NULL)
 
+PRETTY_SUBDIRS                      = \
+    examples                          \
+    include                           \
+    src                               \
+    tests                             \
+    $(NULL)
+
 #
 # Package version files:
 #
